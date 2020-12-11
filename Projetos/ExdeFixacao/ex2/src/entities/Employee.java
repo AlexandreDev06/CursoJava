@@ -10,6 +10,6 @@ public class Employee {
 	}
 	
 	public void IncreseSalary(double percentage) {
-		this.GrossSalary = (GrossSalary / percentage) * 100;
+		GrossSalary = ((GrossSalary * percentage) / 100 )+ NetSalary();
 	}
 }

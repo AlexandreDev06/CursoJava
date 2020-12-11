@@ -25,10 +25,11 @@ public class Program {
 		System.out.printf("Employee: %s, $ %.2f%n", funcionario.name, funcionario.NetSalary());
 
 		System.out.println("Which percentage to increase salaray?");
-		funcionario.IncreseSalary(funcionario.GrossSalary);;
+		double percentage = sc.nextDouble();
+		funcionario.IncreseSalary(percentage);
 
-		System.out.println("Updated data: " + funcionario);
-		
+		System.out.printf("Updated data: %s, $ %.2f%n", funcionario.name, funcionario.GrossSalary);
+
 		sc.close();
 
 	}
