@@ -32,31 +32,23 @@ public class Program {
 			System.out.println("Product #" + i + " data:");
 			System.out.print("Common, used or imported (c/u/i)? ");
 			char a = sc.next().charAt(0);
+			System.out.print("Name: ");
+			sc.nextLine();
+			String name = sc.nextLine();
+			System.out.print("Price: ");
+			double price = sc.nextDouble();
 
 			if (a == 'i') {
-				System.out.print("Name: ");
-				sc.nextLine();
-				String name = sc.nextLine();
-				System.out.print("Price: ");
-				double price = sc.nextDouble();
+
 				System.out.print("Customs fee: ");
 				double customsFee = sc.nextDouble();
 
 				list.add(new ImportedProduct(name, price, customsFee));
 			} else if (a == 'c') {
-				System.out.print("Name: ");
-				sc.nextLine();
-				String name = sc.nextLine();
-				System.out.print("Price: ");
-				double price = sc.nextDouble();
 
 				list.add(new Product(name, price));
 			} else if (a == 'u') {
-				System.out.print("Name: ");
-				sc.nextLine();
-				String name = sc.nextLine();
-				System.out.print("Price: ");
-				double price = sc.nextDouble();
+
 				System.out.print("Manufacture date (DD/MM/YYYY): ");
 				Date manufactureDate = sdf.parse(sc.next());
 
