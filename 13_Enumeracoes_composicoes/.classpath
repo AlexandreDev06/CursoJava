@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="enum/src"/>
+	<classpathentry kind="src" path="ExComposicao/src"/>
+	<classpathentry kind="src" path="ExFixacaoCap13/src"/>
+	<classpathentry kind="src" path="StringBuilder/src"/>
+	<classpathentry kind="output" path="ExComposicao/bin"/>
+</classpath>
